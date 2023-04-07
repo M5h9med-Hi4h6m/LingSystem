@@ -14,7 +14,7 @@ Dev Package: 𝙻𝚂  | ᴹᴼᴴᴬᴹᴱᴰ ♛#6366
 # **_Installation_**
 
 ```js
-npm i ling-system
+npm install ling-system
 ```
 
 # **_Azkar_**
