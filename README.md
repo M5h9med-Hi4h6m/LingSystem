@@ -58,7 +58,7 @@ Colors.DarkerGrey
 Colors.DarkOrange
 Colors.LightGrey
 Colors.DarkPurple
-Colors.Automatic
+Colors.Automatic()
 Colors.DarkGreen
 Colors.DarkAqua
 Colors.DarkBlue
