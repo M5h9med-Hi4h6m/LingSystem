@@ -22,7 +22,7 @@ npm i ling-system
 ```js
 ...
 const discord = require("discord.js"); // npm i dsicord.js
-const { Azkar, Colors } = require("./LingSystem_Package_Node.js/index"); // npm i ling-system
+const { Azkar, Colors } = require("ling-system"); // npm i ling-system
 
 ...
 client.on('messageCreate', message => {
