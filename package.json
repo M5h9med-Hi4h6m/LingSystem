@@ -1,0 +1,22 @@
+{
+    "name": "ling-system",
+    "version": "1.0.0",
+    "main": "index.js",
+    "description": "A System Azkar And Colors Form Channel ( LingSystem ) YouTube",
+    "author": "Joe Hitchens <moh08657249@gmail.com> (https://www.md.noonserv.com)",
+    "scripts": {
+        "vscode:uninstall": "[...] UnInstall"
+    },
+    "keywords": [
+        "Azkar",
+        "colors",
+        "discord",
+        "discord.js",
+        "discord Azkar",
+        "discord colors"
+    ],
+    "dependencies": {
+        "discord.js": "^14.2.0",
+        "translate-google": "^1.5.0"
+    }
+}
