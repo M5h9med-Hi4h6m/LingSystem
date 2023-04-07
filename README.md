@@ -20,28 +20,24 @@ npm i ling-system
 # **_Azkar_**
 
 ```js
-const { EmbedBuilder } = require("discord.js"); // npm i discord.js@14
-const { Colors, Azkar } = require("./index"); // npm i ling-system
+...
+const discord = require("discord.js"); // npm i dsicord.js
+const { Azkar, Colors } = require("./LingSystem_Package_Node.js/index"); // npm i ling-system
 
 ...
-const Embed = EmbedBuilder()
+client.on('messageCreate', message => {
 
-let ChannelAzkar = client.channels.cache.get("ChannelId"); // Channel Id
+  if (message.content === 'Azkar') {
 
-const { guild } = ChannelAzkar;
+    const Embed = new discord.EmbedBuilder()
+    .setDescription(Azkar.Arabic)
+    .setColor(Colors.Automatic)
+    .setTimestamp()
 
-if (!ChannelAzkar) return console.log("[Error] Noting Channel Azkar..."); // Client Noting Channel For All Server Form Bot
+    message.reply({ embeds: [Embed] })
+  }
 
-setInterval(() => {
-    ChannelAzkar.send({ // Send Azkar For Channel 
-        embeds: [
-            Embed.setFooter({ text: `${guild.name}`, iconURL: `${guild.iconURL({ size: 1024 })}`, })
-                .setDescription(`${Azkar.Arabic}`)
-                .setTimestamp()
-                .setColor(Colors.Automatic),
-        ],
-    });
-}, 3500);
+})
 ...
 ```
 
