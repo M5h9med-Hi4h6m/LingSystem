@@ -1,17 +1,26 @@
 {
     "name": "ling-system",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "main": "index.js",
     "description": "A System Azkar And Colors Form Channel ( LingSystem ) YouTube",
     "author": "Joe Hitchens <moh08657249@gmail.com> (https://www.md.noonserv.com)",
     "scripts": {
-        "vscode:uninstall": "[...] UnInstall"
+        "vscode:uninstall": "[...] UnInstall",
+        "test": "npm run test"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/styele/LingSystem"
+      },
     "keywords": [
         "Azkar",
         "colors",
         "discord",
+        "Azkar En",
+        "Azkar Ar",
         "discord.js",
+        "Azkar Arabic",
+        "Azkar English",
         "discord Azkar",
         "discord colors"
     ],
