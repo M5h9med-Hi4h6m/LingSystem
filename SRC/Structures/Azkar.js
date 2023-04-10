@@ -1,12 +1,12 @@
 'use strict';
 
-const { CArabic } = require("../Data/Azkar/Arabic");
-const { CEnglish } = require("../Data/Azkar/English");
+const { Arabic } = require("../Data/Azkar/Arabic");
+const { English } = require("../Data/Azkar/English");
 
 /**
  * @typedef {Object} Azkar
- * @property {number} Arabic CArabic
- * @property {number} English CEnglish
+ * @property {number} Arabic Arabic
+ * @property {number} English English
  */
 
 /**
@@ -15,6 +15,6 @@ const { CEnglish } = require("../Data/Azkar/English");
  */
 
 module.exports = {
-  Arabic: CArabic,
-  English: CEnglish,
+  Arabic: Arabic,
+  English: English,
 };

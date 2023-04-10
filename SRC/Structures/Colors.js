@@ -1,11 +1,11 @@
 'use strict';
 
-const { CNurnal } = require("../Data/Colors/Nurmal");
+const { Nurmal } = require("../Data/Colors/Nurmal");
 
 /**
  * @typedef {Object} Colors
  * @property {number} Default 0x000000 | rgb(0,0,0)
- * @property {number} Automatic CNurnal
+ * @property {number} Automatic Nurmal
  * @property {number} White 0xFFFFFF | rgb(255,255,255)
  * @property {number} Aqua 0x1ABC9C | rgb(26,188,156)
  * @property {number} Green 0x57F287 | rgb(87,242,135)
@@ -44,7 +44,7 @@ const { CNurnal } = require("../Data/Colors/Nurmal");
 
 module.exports = {
   Default: 0x000000,
-  Automatic: CNurnal,
+  Automatic: Nurmal,
   White: 0xffffff,
   Aqua: 0x1abc9c,
   Green: 0x57f287,
