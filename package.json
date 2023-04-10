@@ -1,6 +1,6 @@
 {
     "name": "ling-system",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "main": "index.js",
     "description": "A System Azkar And Colors Form Channel ( LingSystem ) YouTube",
     "author": "Joe Hitchens <moh08657249@gmail.com> (https://www.md.noonserv.com)",
@@ -11,9 +11,10 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/styele/LingSystem"
-      },
+    },
     "keywords": [
         "Azkar",
+        "Embed",
         "colors",
         "discord",
         "Azkar En",
@@ -21,10 +22,13 @@
         "discord.js",
         "Azkar Arabic",
         "Azkar English",
+        "discord Embed",
         "discord Azkar",
         "discord colors"
     ],
     "dependencies": {
-        "discord.js": "^14.2.0"
+        "@discordjs/builders": "^1.6.1",
+        "@discordjs/collection": "^1.5.0",
+        "lodash.snakecase": "^4.1.1"
     }
 }

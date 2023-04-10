@@ -1,12 +1,11 @@
-# **_LING SYSTEM_**
-
-NPM: https://www.npmjs.com/package/ling-system
+# **_`L`i`n`g `S`y`s`t`e`m_**
+NPM: `[` https://www.npmjs.com/package/ling-system `]`
 <br>
-GitHub: https://github.com/styele/LingSystem
+GitHub: `[` https://github.com/styele/LingSystem `]`
 <br>
-Discord Server Support: https://discord.gg/gdxnfwvpqr
+Discord Server Support: `[` https://discord.gg/gdxnfwvpqr `]`
 <br>
-Dev Package: 𝙻𝚂  | ᴹᴼᴴᴬᴹᴱᴰ ♛#6366
+Dev Package: `𝙻𝚂  | ᴹᴼᴴᴬᴹᴱᴰ ♛#6366`
 <br>
 <hr>
 
@@ -16,12 +15,30 @@ Dev Package: 𝙻𝚂  | ᴹᴼᴴᴬᴹᴱᴰ ♛#6366
 npm install ling-system
 ```
 
+# _EmbedBuilder_
+
+```js
+...
+const { EmbedBuilder } = require("ling-system"); // npm i ling-system
+...
+try {
+    const Embed = new EmbedBuilder()
+        .setTitle(`Azkar`)
+        .setDescription(`Arabic: ${Azkar.Arabic} \nEnglish: ${Azkar.English}`)
+        .setColor(Colors.Automatic);
+
+    return interaction.reply({ embeds: [Embed], ephemeral: true });
+} catch (error) {
+    return;
+}
+...
+```
+
 # **_Azkar Arabic_**
 
 ```js
 ...
-const { EmbedBuilder } = require("discord.js"); // npm i discord.js
-const { Azkar, Colors } = require("ling-system"); // npm i ling-system
+const { Azkar, Colors, EmbedBuilder } = require("ling-system"); // npm i ling-system
         
 ...
 const Embed = new EmbedBuilder() // Create A New Embed
@@ -33,24 +50,20 @@ if (!Channel) return console.log("[Error] Noting Channel Azkar..."); // Client N
 setInterval(() => {
     Channel.send({ // Send Azkar For Channel 
         embeds: [
-            Embed.setDescription(Azkar.Arabic())
+            Embed.setDescription(Azkar.Arabic)
                 .setTimestamp()
-                .setColor(Colors.Automatic()),
+                .setColor(Colors.Automatic),
         ],
     });
 }, 50000);
 ...
 ```
 
-# **_Note About Azkar_**
-- **`[Arabic]` يجب استخدام `()` بعد تحديد لغة الأذكار لتعمل بشكل صحيح**
-
 # **_Azkar English_**
 
 ```js
 ...
-const { EmbedBuilder } = require("discord.js"); // npm i discord.js
-const { Azkar, Colors } = require("ling-system"); // npm i ling-system
+const { Azkar, Colors, EmbedBuilder } = require("ling-system"); // npm i ling-system
         
 ...
 const Embed = new EmbedBuilder() // Create A New Embed
@@ -62,9 +75,9 @@ if (!Channel) return console.log("[Error] Noting Channel Azkar..."); // Client N
 setInterval(() => {
     Channel.send({ // Send Azkar For Channel 
         embeds: [
-            Embed.setDescription(Azkar.English())
+            Embed.setDescription(Azkar.English)
                 .setTimestamp()
-                .setColor(Colors.Automatic()),
+                .setColor(Colors.Automatic),
         ],
     });
 }, 50000);
@@ -72,9 +85,6 @@ setInterval(() => {
 ```
 
 <br>
-
-# **_Note About Azkar_**
-- **`[English]` You must use `()` after specifying the Azkar language for it to work properly**
 
 # **_Colors_**
 
@@ -91,7 +101,7 @@ Colors.DarkerGrey
 Colors.DarkOrange
 Colors.LightGrey
 Colors.DarkPurple
-Colors.Automatic()
+Colors.Automatic
 Colors.DarkGreen
 Colors.DarkAqua
 Colors.DarkBlue
@@ -116,14 +126,15 @@ Colors.Navy
 Colors.Red
 ...
 ```
-# **_A Note About Colors Automatuc_**
-- **`[English]` You must use `()` after using `"Automatic"` colors for it to work properly**
 <hr>
 
-- **Discord Server Support: https://discord.gg/gdxnfwvpqr**
-- **Dev Package: 𝙻𝚂  | ᴹᴼᴴᴬᴹᴱᴰ ♛#6366**
+- **Discord Server Support: `[` https://discord.gg/gdxnfwvpqr `]`**
+- **Dev Package: `𝙻𝚂  | ᴹᴼᴴᴬᴹᴱᴰ ♛#6366`**
 <br>
 <hr>
-<center><h1>
+<center></center>
 
-**End Package**</h1></center>
+# **_Updates `1.1.1`_**
+- 1 - **You can now specify the Azkar language without the `()`**
+- 2 - **You can use Color Automatic without the `()`**
+- 3 - **EmbedBuilder has been added globally**

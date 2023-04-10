@@ -1,5 +1,7 @@
-const Colors = require("./SRC/Util/Colors");
-const Azkar = require("./SRC/Util/Azkar");
+'use strict';
+
+const Colors = require("./SRC/Structures/Colors");
+const Azkar = require("./SRC/Structures/Azkar");
 
 const version = require("./package.json").version
 
@@ -24,4 +26,6 @@ setTimeout(() => {
 \n`);
 }, 3000)
 
-module.exports = { Azkar, Colors, version };
+const EmbedBuilder = require('./SRC/Structures/EmbedBuilder');
+
+module.exports = { Azkar, Colors, version, EmbedBuilder };
