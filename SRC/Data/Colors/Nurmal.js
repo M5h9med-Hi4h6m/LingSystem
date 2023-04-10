@@ -1,5 +1,6 @@
-function Nurmal() {
+'use strict';
 
+function Nurmal() {
     let AutomaticColors = [
         0x000000, 0xffffff, 0x1abc9c,
         0x57f287, 0x3498db, 0xfee75c,
@@ -13,8 +14,7 @@ function Nurmal() {
         0x99aab5, 0x2c2f33, 0x23272a,
     ];
 
-    return AutomaticColors[Math.floor(Math.random() * AutomaticColors.length)];
-
+  return AutomaticColors[Math.floor(Math.random() * AutomaticColors.length)];
 }
 
-module.exports = { Nurmal }
+module.exports = { Nurmal };
