@@ -1,4 +1,4 @@
-# **_`L`i`n`g `S`y`s`t`e`m_**
+# **_Ling System_**
 NPM: `[` https://www.npmjs.com/package/ling-system `]`
 <br>
 GitHub: `[` https://github.com/styele/LingSystem `]`
@@ -15,17 +15,19 @@ Dev Package: `𝙻𝚂  | ᴹᴼᴴᴬᴹᴱᴰ ♛#6366`
 npm install ling-system
 ```
 
+<br>
+
 # _EmbedBuilder_
 
 ```js
 ...
-const { EmbedBuilder } = require("ling-system"); // npm i ling-system
+const { Azkar, Colors, EmbedBuilder } = require("ling-system"); // npm i ling-system
 ...
 try {
     const Embed = new EmbedBuilder()
         .setTitle(`Azkar`)
-        .setDescription(`Arabic: ${Azkar.Arabic} \nEnglish: ${Azkar.English}`)
-        .setColor(Colors.Automatic);
+        .setDescription(`Arabic: ${Azkar.Arabic()} \nEnglish: ${Azkar.English()}`)
+        .setColor(Colors.Automatic());
 
     return interaction.reply({ embeds: [Embed], ephemeral: true });
 } catch (error) {
@@ -50,9 +52,9 @@ if (!Channel) return console.log("[Error] Noting Channel Azkar..."); // Client N
 setInterval(() => {
     Channel.send({ // Send Azkar For Channel 
         embeds: [
-            Embed.setDescription(Azkar.Arabic)
+            Embed.setDescription(Azkar.Arabic())
                 .setTimestamp()
-                .setColor(Colors.Automatic),
+                .setColor(Colors.Automatic()),
         ],
     });
 }, 50000);
@@ -75,16 +77,41 @@ if (!Channel) return console.log("[Error] Noting Channel Azkar..."); // Client N
 setInterval(() => {
     Channel.send({ // Send Azkar For Channel 
         embeds: [
-            Embed.setDescription(Azkar.English)
+            Embed.setDescription(Azkar.English())
                 .setTimestamp()
-                .setColor(Colors.Automatic),
+                .setColor(Colors.Automatic()),
         ],
     });
 }, 50000);
 ...
 ```
 
-<br>
+# **_Database (`db`)_**
+
+```js
+...
+const { Database } = require("ling-system"); // npm i ling-system
+const db = new Database() // To define the Database to function properly
+
+...
+db.set('key','value'); // to set a data to database.
+db.get('key'); // to get the data by key.
+db.delete('key'); // to delete key from database.
+db.has('key','value'); // return "true" or "false".
+
+db.add('key', 10;); // to add a number to the key.
+db.substract('key', 5); // to subtract a number from the key.
+db.push('key', 10); // to set a data at the end.
+db.math("key","+",5); // to math the numbers.
+
+db.fetch(); // to fetch the data from database. 
+db.fetchAll(); // to fetchAll data.
+db.all(); // to get all data in database.
+
+db.backup("Filename"); // to make a backup file.
+db.reset(); // to delete all data and database.
+...
+```
 
 # **_Colors_**
 
@@ -101,7 +128,7 @@ Colors.DarkerGrey
 Colors.DarkOrange
 Colors.LightGrey
 Colors.DarkPurple
-Colors.Automatic
+Colors.Automatic()
 Colors.DarkGreen
 Colors.DarkAqua
 Colors.DarkBlue
@@ -133,8 +160,3 @@ Colors.Red
 <br>
 <hr>
 <center></center>
-
-# **_Updates `1.1.1`_**
-- 1 - **You can now specify the Azkar language without the `()`**
-- 2 - **You can use Color Automatic without the `()`**
-- 3 - **EmbedBuilder has been added globally**

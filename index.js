@@ -1,7 +1,10 @@
 'use strict';
 
+const EmbedBuilder = require('./SRC/Structures/EmbedBuilder');
 const Colors = require("./SRC/Structures/Colors");
 const Azkar = require("./SRC/Structures/Azkar");
+const { Data } = require("./SRC/Structures/Database");
+
 
 const version = require("./package.json").version
 
@@ -17,8 +20,8 @@ setTimeout(() => {
 |############### Azkar  -   -   -   -   -  ${version}  -   -   -   -   -   -   Colors ############|
 |#    ##                                                                              ##    #|
 |###############                                                                 ############|
-|#    #################                                                 ################    #|
-|################################        -----------          ###############################|
+|#    ################# EmbedBuilder                           Database ################    #|
+|################################         ---------           ###############################|
 |#    ##################################################################################    #|
 |#########            ##########          ##########          ##########            #########|
 |#    ##################################################################################    #|
@@ -26,6 +29,12 @@ setTimeout(() => {
 \n`);
 }, 3000)
 
-const EmbedBuilder = require('./SRC/Structures/EmbedBuilder');
+// Exports
 
-module.exports = { Azkar, Colors, version, EmbedBuilder };
+module.exports = {
+    Azkar,
+    Colors,
+    version,
+    EmbedBuilder,
+    Database: Data
+};
