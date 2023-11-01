@@ -3,9 +3,9 @@ NPM: `[` https://www.npmjs.com/package/ling-system `]`
 <br>
 GitHub: `[` https://github.com/styele/LingSystem `]`
 <br>
-Discord Server Support: `[` https://discord.gg/gdxnfwvpqr `]`
+Discord Server Support: `[` Soon `]`
 <br>
-Dev Package: `𝙻𝚂  | ᴹᴼᴴᴬᴹᴱᴰ ♛#6366`
+Dev Package: `6x.g`
 <br>
 <hr>
 
@@ -155,8 +155,8 @@ Colors.Red
 ```
 <hr>
 
-- **Discord Server Support: `[` https://discord.gg/gdxnfwvpqr `]`**
-- **Dev Package: `𝙻𝚂  | ᴹᴼᴴᴬᴹᴱᴰ ♛#6366`**
+- **Discord Server Support: `[` Soon `]`**
+- **Dev Package: `6x.g`**
 <br>
 <hr>
 <center></center>
